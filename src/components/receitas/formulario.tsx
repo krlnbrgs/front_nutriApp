@@ -18,14 +18,14 @@ export default function Formulario(props: FormularioProps) {
         <div>
             {id ? (<Entrada texto="id" valor={id} somenteLeitura></Entrada>) : false}
             <Entrada texto="Nome" valor={nome} onChange={setNome}></Entrada>
-            <Entrada texto="Descricao" valor={descricao} onChange={setDescricao}></Entrada>
+            <Entrada texto="Descrição" valor={descricao} onChange={setDescricao}></Entrada>
             <div className="flex justify-end mt-5">
-                <Botao className="mr-3" cor="bg-gradient-to-r from-blue-500 to-blue-700"
+                <Botao className="mr-3" cor="bg-gradient-to-r from-yellow-500 to-yellow-700"
                     onClick={() => props.receitaMudou?.(new Receita(
                         id, nome, descricao))}>
                     {id ? 'Alterar' : 'Salvar'}
                 </Botao>
-                <Botao cor="bg-gradient-to-r from-gray-500 to-gray-700"
+                <Botao cor="bg-gradient-to-r from-red-500 to-red-700"
                     onClick={props.cancelado}>
                     Cancelar
                 </Botao>

@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 255, 255, 255;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 245, 245, 220;
+  --background-start-rgb: 222, 184, 135;
+  --background-end-rgb: 205, 133, 63;
 }
 
 body {
@@ -17,3 +17,23 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+nav {
+  background-color: #856f25;
+  color: #fff;
+
+}
+
+.font-sans {
+  
+}
+
+.text-lg {
+  font-size: 1.125rem; 
+}
+
+.font-bold {
+  font-weight: bold;
+ 
+}
+

@@ -14,10 +14,10 @@ export default function Tabela(props: TabelaProps) {
     function renderHeader() {
         return (
             <tr>
-                <th className="text-left p-3">id</th>
-                <th className="text-left p-3">nome</th>
-                <th className="text-left p-3">descricao</th>
-                {exibirAcoes ? <th className="p-3">Ações</th> : false}
+                <th className="text-left p-3">ID</th>
+                <th className="text-left p-3">NOME</th>
+                <th className="text-left p-3">DESCRIÇÃO</th>
+                {exibirAcoes ? <th className="p-3">AÇÕES</th> : false}
             </tr>
         )
     }
@@ -26,7 +26,7 @@ export default function Tabela(props: TabelaProps) {
         return props.receitas?.map((receita, i) => {
             return (
                 <tr key={receita.id}
-                    className={`${i % 2 === 0 ? 'bg-indigo-200' : 'bg-indigo-100'} `}>
+                    className={`${i % 2 === 0 ? 'bg-yellow-200' : 'bg-yellow-100'} `}>
                     <td className="text-left p-3">{receita.id}</td>
                     <td className="text-left p-3">{receita.nome}</td>
                     <td className="text-left p-3">{receita.descricao}</td>
@@ -43,12 +43,12 @@ export default function Tabela(props: TabelaProps) {
             <td className="flex justify-center">
                 {props.receitaSelecionada ? (
                     <button onClick={() => props.receitaSelecionada?.(receita)} className={`flex justify-center items
-                    text-green-600 rounded-full p-2 m-1
+                    text-green-800 rounded-full p-2 m-1
                     hover:bg-gray-100`}>{IconeEdicao}</button>
                 ) : false }
                 {props.receitaExcluida ? (
                     <button onClick={() => props.receitaExcluida?.(receita)} className={`flex justify-center items
-                    text-red-600 rounded-full p-2 m-1
+                    text-red-800 rounded-full p-2 m-1
                     hover:bg-gray-100`}>{IconeLixo}</button>
                 ) : false}
             </td>
@@ -58,7 +58,7 @@ export default function Tabela(props: TabelaProps) {
     return (
         <table className="w-full rounded-xl overflow-hidden">
             <thead className={`text-gray-100
-            bg-gradient-to-r from-indigo-500 to-indigo-800`}>
+            bg-gradient-to-r from-yellow-500 to-yellow-800`}>
                 {renderHeader()}
             </thead>
             <tbody>

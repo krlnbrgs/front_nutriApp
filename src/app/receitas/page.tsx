@@ -88,13 +88,13 @@ export default function Receitas() {
   return (
     <div className={`
      flex justify-center items-center h-screen
-     bg-gradient-to-bl from-indigo-900 via-indigo-400 to-indigo-900
+     bg-gradient-to-bl from-yellow-100 via-yellow-700 to-yellow-900
      text-white`}>
       <Layout titulo="Cadastro de Receitas">
         {visivel === 'tabela' ? (
           <>
             <div className="flex justify-end">
-              <Botao className="mb-4" cor="bg-gradient-to-r from-green-500 to-green-700"
+              <Botao className="mb-4" cor="bg-gradient-to-r from-yellow-500 to-yellow-700"
                 onClick={() => novaReceita()}>
                 Nova Receita
               </Botao>

@@ -17,8 +17,8 @@ export default function Entrada(props: EntradaProps) {
                 readOnly={props.somenteLeitura}
                 onChange={e => props.onChange?.(e.target.value)}
                 className={` 
-                    border border-indigo-500 rounded-lg
-                    focus:outline-none bg-gray-100 px-4 py-2 
+                    border border-yellow-500 rounded-lg
+                    focus:outline-none bg-yellow-100 px-4 py-2 
                     ${props.somenteLeitura ? '' : 'focus:bg-white'}
                 `} />
         </div>
